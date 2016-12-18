@@ -12,10 +12,10 @@ set NODE_ENV=production
 webpack
 ```    
 
-#DEVEVLOPMENT MODE 
+#DEVELOPMENT MODE 
 __________________________
 ```js
-set NODE_ENV=production 
+set NODE_ENV=development
 
 webpack
 ```    
