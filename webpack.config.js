@@ -11,6 +11,7 @@ module.exports = {
   watch: NODE_ENV === 'development',
   devtool: NODE_ENV == 'development' ? 'cheap-inline-module-source-map': null,
   plugins: [
+    new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)
     })
@@ -21,7 +22,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-          presets: ['es2015', 'stage-0']
+          presets: ['es2015', 'stage-0', 'react']
       }
     }]
   }
